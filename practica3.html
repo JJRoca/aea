@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+    //EJERCICIO NUMERO 1 
+    document.write("Ejericio numero 1 temperatura");
+    document.write("<br>")
+
+      function temperatura(grados){
+        var grados=grados;
+
+            if(grados>=-10&&grados<=15)
+                {
+                    document.write(+grados+"ºC"+" La temperatura esta frio");
+                }else 
+                    if(grados>=16&&grados<=25)
+                     {
+                     document.write(grados+"ºC"+" La temperatura esta templado");
+                     }
+                else
+                     if(grados>=26&&grados<=40){
+                         document.write(grados+"ºC"+" Demasiado caluroso")
+
+                     }
+      }
+      temperatura(20);
+      document.write("<br>");
+      document.write("<br>");
+
+     /*EJERCIICO NUMERO 2*/ 
+      document.write("Ejericio numero 2 factorial");
+    document.write("<br>");
+       
+        function factorial(numero){
+           // var numero=numero;
+            var numero2=1;
+            var fac=1;
+            while(numero2<=numero){
+             fac=fac*numero2;
+                numero2++;
+            }
+            document.write(fac);
+        }    
+        factorial(5);
+        document.write("<br>");
+        /*EJERCICIO NUMERO3*/
+        document.write("<br>");
+        document.write("Ejercicio Numero3 Fizz Buzz")
+        function FizzBuzz(){
+
+        document.write("<br>");
+
+        for (let i = 1; i <= 100; i++) {
+
+             if (((i % 3) == 0) && ((i % 5) == 0)) {
+
+             document.write(i + ".-" + " " + "FizzBuzz");
+
+             document.write("<br>");
+
+        }    else if ((i % 3) == 0) {
+
+            document.write(i + ".-" + " " + "Fizz");
+
+            document.write("<br>");
+
+        } else if ((i % 5) == 0) {
+
+            document.write(i + ".-" + " " + "Buzz");
+
+            document.write("<br>");
+
+        } else {
+
+         document.write(i + ".-");
+
+        document.write("<br>");
+
+        }
+        }
+    }
+    FizzBuzz();
+document.write("<br>");
+/*Ejercicio4*/
+document.write("Ejercicio4 Fecha Actual");
+document.write("<br>");
+    function Ejercicio4(){
+
+        var f = new Date();
+        document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+    }
+    Ejercicio4();
+    </script>  
+</body>
+</html>
